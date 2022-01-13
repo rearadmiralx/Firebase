@@ -1,0 +1,29 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "redirects": [ {
+      "source": "/login",
+      "destination": "/login.html",
+      "type": 301
+    },
+  {
+    "source": "/signup",
+    "destination": "/signup.html",
+    "type": 301
+  },
+  {
+    "source": "/dashboard",
+    "destination": "/dashboard.html",
+    "type": 301
+  }],
+
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
